@@ -30,6 +30,26 @@ while (i <= 10)
 
 console.log(result);
 
+let numf = 5;
+let faktor = 0;
+
+for (let a = 1; a <= numf; a++)
+{
+    if (numf % a === 0)
+    {
+        faktor++;
+    }
+}
+
+if (faktor === 2)
+{
+    console.log(numf + " adalah bilangan Prima");
+}
+else
+{
+    console.log(numf + " adalah bukan bilangan Prima");
+}
+
 console.log("--------------------------");
 /** 2. Print segitiga
 var n = 5;
@@ -87,6 +107,35 @@ while (x <= 5)
         console.log(bar2);
     }
     x++;
+}
+
+/// Alternative solution
+
+let numa = 5;
+let restemp = "";
+
+for(let ia = 0; ia < numa; ia++)
+{
+    for(let ja = 0; ja < numa; ja++)
+    {
+        if(ia === 0 || ia === numa-1)
+        {
+            restemp += "#";
+        }
+        else
+        {
+            if(ja === 0 || ja === numa-1)
+            {
+                restemp += "#";
+            }
+            else
+            {
+                restemp += " ";
+            }
+        }
+    }
+    console.log(restemp);
+    restemp = "";
 }
 
 
