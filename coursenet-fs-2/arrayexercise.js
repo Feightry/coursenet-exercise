@@ -43,28 +43,49 @@ let temp2b = [];
 let temp2c = [];
 let combinetemp = [];
 
-while (i < fruits.length)
+// while (i < fruits.length)
+// {
+//     if (fruits[i][0] === "a")
+//     {
+//         temp2a.push(fruits[i]);
+//     }
+//     else if (fruits[i][0] === "b")
+//     {
+//         temp2b.push(fruits[i]);
+//     }
+//     else if (fruits[i][0] === "c")
+//     {
+//         temp2c.push(fruits[i]);
+//     }
+//     i++;
+// }
+
+// console.log(temp2a);
+// console.log(temp2b);
+// console.log(temp2c);
+
+// combinetemp.push(temp2a, temp2b, temp2c);
+// console.log(combinetemp);
+
+let kamus = 'abcdefghijklmnopqrstuvwxyz';
+let temparray = [];
+
+for (let x = 0; x < kamus.length; x++)
 {
-    if (fruits[i][0] === "a")
+    for (let y = 0; y < fruits.length; y++)
     {
-        temp2a.push(fruits[i]);
+        if (kamus[x] == fruits[y][0])
+        {
+            temparray.push(fruits[y]);
+        }
     }
-    else if (fruits[i][0] === "b")
+    if (temparray.length !== 0)
     {
-        temp2b.push(fruits[i]);
+        combinetemp.push(temparray);
     }
-    else if (fruits[i][0] === "c")
-    {
-        temp2c.push(fruits[i]);
-    }
-    i++;
+    temparray = [];
 }
 
-console.log(temp2a);
-console.log(temp2b);
-console.log(temp2c);
-
-combinetemp.push(temp2a, temp2b, temp2c);
 console.log(combinetemp);
 
 console.log("--------------------------");

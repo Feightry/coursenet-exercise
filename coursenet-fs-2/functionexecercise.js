@@ -16,15 +16,16 @@ function printPrimes(num){
     let temp1 = "";
     let a = 1;
     let b = 1;
+    let faktor = 0;
 
     while (a <= num)
     {
-        let faktor = 0;
+        faktor = 0;
         for (let i = 1; i <= b; i++)
         {
             if(b % i === 0)
             {
-                faktor += 1;
+                faktor++;
             }
         }
         if (faktor === 2)
@@ -50,7 +51,7 @@ function printPrimes(num){
     console.log(temp1);
 }
 
-printPrimes(10);
+printPrimes(15);
 printPrimes(5);
 
 /* 2. Triple Pythagoras
@@ -64,7 +65,7 @@ function triple(a,b,c){
 }*/
 
 function triple(a,b,c){
-    if (Math.pow(a,2)+ Math.pow(b,2) === Math.pow(c,2))
+    if (Math.pow(a,2) + Math.pow(b,2) === Math.pow(c,2))
     {
         return true;
     }
@@ -72,6 +73,7 @@ function triple(a,b,c){
     {
         return false;
     }
+    // return resulta + resultb === resultc ? true : false
 }
 
 console.log(triple(3,4,5)) // true
@@ -100,6 +102,7 @@ function splitToArray(string){
     {
         tempstr = string[k-1] + string[k];
         temparr3.push(tempstr);
+        // temparr3.push(Number(tempstr)); -> convert to number
         tempstr = 0;
         k++;
     }
