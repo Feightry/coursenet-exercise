@@ -1,0 +1,37 @@
+[
+   {
+      "id": 1,
+      "task": "Belajar Node.js",
+      "status": true,
+      "created_at": "2020-04-07T14:31:44.338Z",
+      "completed_at": "2020-04-07T14:31:44.338Z"
+   },
+   {
+      "id": 2,
+      "task": "Download Stream",
+      "status": false,
+      "created_at": "2020-04-07T14:31:44.338Z",
+      "completed_at": null
+   },
+   {
+      "id": 3,
+      "task": "Makan Bersama",
+      "status": false,
+      "created_at": "2020-04-07T14:31:44.338Z",
+      "completed_at": null
+   },
+   {
+      "id": 4,
+      "task": "Coding Bareng",
+      "status": false,
+      "created_at": "Sat Apr 30 2022 15:43:11 GMT+0700 (Western Indonesia Time)",
+      "completed_at": null
+   },
+   {
+      "id": 5,
+      "task": "Ngopy Bareng",
+      "status": false,
+      "created_at": "Sat Apr 30 2022 16:04:37 GMT+0700 (Western Indonesia Time)",
+      "completed_at": null
+   }
+]
